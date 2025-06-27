@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🔍 LLM Whodunnit
 
-## Getting Started
+_A playful interactive mystery game powered by a language model._
 
-First, run the development server:
+![screenshot](./screenshot.png)
+
+---
+
+## 🧠 What is this?
+
+**LLM Whodunnit** is a murder mystery interrogation game where you, the investigator, must figure out which of three quirky suspects is guilty — by questioning them directly.
+
+Each suspect is powered by a large language model and roleplays in character:
+- One is guilty and will lie (badly)
+- Two are innocent but odd
+
+Ask them anything. Compare their stories. Then make your accusation.
+
+---
+
+## 💻 Built With
+
+- [Next.js 14+ App Router](https://nextjs.org/)
+- React + Tailwind CSS
+- OpenAI GPT-3.5 API
+- Optional: Ollama / Claude API support (coming soon)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/llm-whodunnit.git
+cd llm-whodunnit
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Set up your OpenAI API key
+
+Create a `.env.local` file:
+
+```env
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+You’ll need an OpenAI account with billing enabled.
+
+### 4. Start the dev server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎮 How to Play
 
-## Learn More
+1. A murder has taken place at the AI lab.
+2. Question any of the 3 suspects — each has a distinct personality.
+3. Listen carefully. One is lying.
+4. When you're ready, accuse someone.
+5. Win or lose, try again. The culprit is randomized each round.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 🎭 Dynamic character personalities and guilt logic
+- 💬 In-character LLM-generated responses
+- 📜 Auto-scrolling chat log
+- ✅ Win/loss logic and feedback
+- 🔁 Instant replay with a new culprit
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧪 Future Ideas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Red herrings and fake clues
+- Case file panel or notebook
+- Multi-round scoring
+- More suspects + dialogue depth
+- Mobile polish
+
+---
+
+## 📄 License
+
+MIT — feel free to use or remix. Attribution appreciated!
